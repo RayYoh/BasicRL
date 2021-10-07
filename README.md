@@ -71,8 +71,8 @@ The differences compared to [rainbow-is-all-you-need](https://github.com/Curt-Pa
 ## Installation
 **BasicRL** is tested on Anaconda virtual environment with Python3.7+
 ```
-conda create -n **BasicRL** python=3.7
-conda activate **BasicRL**
+conda create -n BasicRL python=3.7
+conda activate BasicRL
 ```
 Clone the repository:
 ```
@@ -105,10 +105,10 @@ To cite this repository:
 ```
 @misc{lei,
   author = {Lei Yao},
-  title = {**BasicRL**: easy and fundamental codes for deep reinforcement learning},
+  title = {BasicRL: easy and fundamental codes for deep reinforcement learning},
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/RayYoh/**BasicRL**}},
+  howpublished = {\url{https://github.com/RayYoh/BasicRL}},
 }
 ```
