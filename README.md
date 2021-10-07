@@ -33,7 +33,7 @@ BasicRL:
 │  └─reinforce/vpg/ppo/ddpg/td3/sac.py  
 │  └─utils.py  
 │  └─logx.py  
-├─rainbow   <font color=blue># value-based algorithms that use gpu </font>
+├─rainbow   <font color=blue># value-based algorithms that use gpu </font>  
 │  └─dqn/double_dqn/dueling_dqn/moisy_dqn/distributional_dqn.py  
 │  └─utils.py   
 │  └─logx.py   
