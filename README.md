@@ -28,8 +28,8 @@ BasicRL:
 ├─pg  <font color=blue># policy gradient DRL that use gpu</font>  
 │  └─reinforce/vpg/ppo/ddpg/td3/sac.py  <font color=blue># policy gradient algorithms  </font>  
 │  └─utils.py   <font color=blue># expereience replay buffer and network  </font>   
-│  └─logx.py   <font color=blue># logger  </font>
-├─pg_cpu   <font color=blue># policy gradient DRL that use gpu  </font>
+│  └─logx.py   <font color=blue># logger  </font>  
+├─pg_cpu   <font color=blue># policy gradient DRL that use gpu  </font>  
 │  └─reinforce/vpg/ppo/ddpg/td3/sac.py  
 │  └─utils.py  
 │  └─logx.py  
@@ -109,6 +109,6 @@ To cite this repository:
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/AI4Finance-Foundation/ElegantRL}},
+  howpublished = {\url{https://github.com/RayYoh/BasicRL}},
 }
 ```
