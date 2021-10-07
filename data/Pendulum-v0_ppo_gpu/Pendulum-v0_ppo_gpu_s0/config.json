@@ -1,0 +1,28 @@
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            64,
+            64
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "clip_ratio":	0.2,
+    "env_fn":	"<function <lambda> at 0x0000017ADA87E9D8>",
+    "epochs":	200,
+    "exp_name":	"Pendulum-v0_ppo_gpu",
+    "gamma":	0.99,
+    "lam":	0.97,
+    "logger_kwargs":	{
+        "exp_name":	"Pendulum-v0_ppo_gpu",
+        "output_dir":	"d:\\6A.PythonCodes\\rainbow-pg-is-all-you-need\\data\\Pendulum-v0_ppo_gpu\\Pendulum-v0_ppo_gpu_s0"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	0.0003,
+    "save_freq":	10,
+    "seed":	0,
+    "steps_per_epoch":	4000,
+    "target_kl":	0.01,
+    "train_pi_iters":	80,
+    "train_v_iters":	80,
+    "vf_lr":	0.001
+}
