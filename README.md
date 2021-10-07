@@ -25,6 +25,7 @@ The differences compared to [rainbow-is-all-you-need](https://github.com/Curt-Pa
 
 ## File Structure
 **BasicRL**:  
+```
 ├─pg    
 │  └─reinforce/vpg/ppo/ddpg/td3/sac.py    
 │  └─utils.py      
@@ -39,34 +40,41 @@ The differences compared to [rainbow-is-all-you-need](https://github.com/Curt-Pa
 │  └─logx.py   
 ├─requirements.txt  
 └─plot.py
-
+```
 
 ## Code Structure
 ### Core code
 `xxx.py`(`dqn.py`...)
-* agent class:
-  * init
-  * compute loss
-  * update
-  * get action
-  * test agent
-  * train
-* main
+```
+- agent class:
+  - init
+  - compute loss
+  - update
+  - get action
+  - test agent
+  - train
+- main
+```
 ### Common code
 `utils.py`
-* expereience replay buffer: On-policy/Off-policy replay buffer
-* network  
+```
+- expereience replay buffer: On-policy/Off-policy replay buffer
+- network  
+```
 
 `logx.py`
-* Logger
-* EpochLogger
-
+```
+- Logger
+- EpochLogger
+```
 `plot.py`
-* plot data
-* get datasets
-* get all datasets
-* make plots
-* main
+```
+- plot data
+- get datasets
+- get all datasets
+- make plots
+- main
+```
 
 ## Installation
 **BasicRL** is tested on Anaconda virtual environment with Python3.7+
