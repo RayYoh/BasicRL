@@ -12,16 +12,14 @@ import time
 
 class DQN():
     def __init__(
-        self, 
-        env_fn, 
+        self, env_fn, 
         target_update,epsilon_decay,
         dqn = Network, seed=0, 
         steps_per_epoch=4000, 
         epochs=100, replay_size=int(1e5), 
         gamma=0.99, q_lr=1e-3, 
         batch_size=32, start_steps=600, 
-        update_after=600, 
-        num_test_episodes=5, 
+        update_after=600, num_test_episodes=5, 
         max_ep_len=300, logger_kwargs=dict(), 
         max_epsilon = 1.0, min_epsilon = 0.1,
         save_freq=10

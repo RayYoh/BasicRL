@@ -1,15 +1,10 @@
-import numpy as np
 from dqn import DQN
 
 from utils import *
 from logx import *
-import torch
 import torch.nn.functional as F
-from copy import deepcopy
 import torch
-from torch.optim import Adam
 import gym
-import time
 
 class DoubleDQN(DQN):
     

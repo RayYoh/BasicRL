@@ -1,11 +1,9 @@
 import numpy as np
-from numpy.random import seed
 from dqn import DQN
 
 from utils import *
 from logx import *
 import torch
-import torch.nn.functional as F
 from copy import deepcopy
 import torch
 from torch.optim import Adam
