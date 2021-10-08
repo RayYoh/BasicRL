@@ -34,9 +34,9 @@ if __name__ == '__main__':
     parser.add_argument('--target_update', type=int, default=100)
     parser.add_argument('--epsilon_decay', type=float, default=1 / 2000)
     parser.add_argument('--gamma', type=float, default=0.99)
-    parser.add_argument('--seed', '-s', type=int, default=20)
+    parser.add_argument('--seed', '-s', type=int, default=10)
     parser.add_argument('--epochs', type=int, default=100)
-    parser.add_argument('--exp_name', type=str, default='CartPole-v0_double_dqn')
+    parser.add_argument('--exp_name', type=str, default='1008CartPole-v0_dqn_double')
     args = parser.parse_args()
 
     from logx import setup_logger_kwargs
@@ -44,5 +44,5 @@ if __name__ == '__main__':
 
     agent = DoubleDQN(lambda : gym.make(args.env), target_update=args.target_update, 
          epsilon_decay=args.epsilon_decay, dqn=Network, seed=args.seed, logger_kwargs=logger_kwargs,
-         epochs=args.epochs, gamma=args.gamma,steps_per_epoch=1000, max_ep_len=200)
+         epochs=args.epochs, gamma=args.gamma,steps_per_epoch=600, max_ep_len=200)
     agent.train()

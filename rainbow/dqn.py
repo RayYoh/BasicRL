@@ -15,12 +15,12 @@ class DQN():
         self, env_fn, 
         target_update,epsilon_decay,
         dqn = Network, seed=0, 
-        steps_per_epoch=4000, 
-        epochs=100, replay_size=int(1e5), 
+        steps_per_epoch=600, 
+        epochs=100, replay_size=int(2000), 
         gamma=0.99, q_lr=1e-3, 
-        batch_size=32, start_steps=600, 
-        update_after=600, num_test_episodes=5, 
-        max_ep_len=300, logger_kwargs=dict(), 
+        batch_size=32, start_steps=200, 
+        update_after=200, num_test_episodes=5, 
+        max_ep_len=200, logger_kwargs=dict(), 
         max_epsilon = 1.0, min_epsilon = 0.1,
         save_freq=10
         ):
@@ -232,5 +232,5 @@ if __name__ == '__main__':
 
     agent = DQN(lambda : gym.make(args.env), target_update=args.target_update, 
          epsilon_decay=args.epsilon_decay, dqn=Network, seed=args.seed, logger_kwargs=logger_kwargs,
-         epochs=args.epochs, gamma=args.gamma,steps_per_epoch=1000, max_ep_len=300)
+         epochs=args.epochs, gamma=args.gamma,steps_per_epoch=600, max_ep_len=200)
     agent.train()

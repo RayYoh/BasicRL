@@ -172,7 +172,7 @@ def main():
     parser.add_argument('--xaxis', '-x', default='TotalEnvInteracts')
     parser.add_argument('--value', '-y', default='Performance', nargs='*')
     parser.add_argument('--count', action='store_true')
-    parser.add_argument('--smooth', '-s', type=int, default=10)
+    parser.add_argument('--smooth', '-s', type=int, default=0)
     parser.add_argument('--select', nargs='*')
     parser.add_argument('--exclude', nargs='*')
     parser.add_argument('--est', default='mean')
@@ -226,7 +226,7 @@ def main():
 
     """
     # print(args.logdir)
-    args.logdir = ['data\\CartPole-v0_vpg_gpu', 'data\\CartPole-v0_ppo_gpu'] # data\\CartPole-v0
+    args.logdir = ['data\\1008CartPole-v0_vpg', 'data\\1008CartPole-v0_ppo'] # data\\CartPole-v0
     make_plots(args.logdir, args.legend, args.xaxis, args.value, args.count, 
                smooth=args.smooth, select=args.select, exclude=args.exclude,
                estimator=args.est)

@@ -191,11 +191,11 @@ if __name__ == '__main__':
     parser.add_argument('--hid', type=int, default=64)
     parser.add_argument('--l', type=int, default=2)
     parser.add_argument('--gamma', type=float, default=0.99)
-    parser.add_argument('--seed', '-s', type=int, default=20)
+    parser.add_argument('--seed', '-s', type=int, default=0)
     parser.add_argument('--cpu', type=int, default=4)
-    parser.add_argument('--steps', type=int, default=500)
+    parser.add_argument('--steps', type=int, default=600)
     parser.add_argument('--epochs', type=int, default=200)
-    parser.add_argument('--exp_name', type=str, default='CartPole-v0_vpg_gpu')
+    parser.add_argument('--exp_name', type=str, default='1008CartPole-v0_vpg')
     args = parser.parse_args()
 
     from logx import setup_logger_kwargs

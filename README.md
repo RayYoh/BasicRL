@@ -94,9 +94,10 @@ pip install -r requirements.txt
 **BasicRL** code library makes local experiments easy to do, and there are two ways to run them: either from the command line, or through function calls in scripts.
 
 ## Experiment
-After testing, Basic RL runs perfectly, but its performance has not been tested. Users can tweak the parameters and change the experimental environment to output final results for comparison. One possible output is shown below:  
+After testing, Basic RL runs perfectly, but its performance has not been tested. Users can tweak the parameters and change the experimental environment to output final results for comparison. Possible outputs are shown below:  
 
-![a demo](data/Figure_1.png)
+![dqn](data/dqn.png)
+![pg](data/pg.png)
 ## Contribution
 **BasicRL** is not yet complete and I will continue to maintain it. To any interested in making **BasicRL** better, any contribution is warmly welcomed. If you want to contribute, please send a Pull Request.  
 If you are not familiar with creating a Pull Request, here are some guides:

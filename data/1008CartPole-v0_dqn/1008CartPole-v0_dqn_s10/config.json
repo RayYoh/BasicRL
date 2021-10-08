@@ -1,0 +1,26 @@
+{
+    "batch_size":	32,
+    "dqn":	"Network",
+    "env_fn":	"<function <lambda> at 0x00000149D6AC2948>",
+    "epochs":	100,
+    "epsilon_decay":	0.0005,
+    "exp_name":	"1008CartPole-v0_dqn",
+    "gamma":	0.99,
+    "logger_kwargs":	{
+        "exp_name":	"1008CartPole-v0_dqn",
+        "output_dir":	"d:\\6A.PythonCodes\\BasicRL\\data\\1008CartPole-v0_dqn\\1008CartPole-v0_dqn_s10"
+    },
+    "max_ep_len":	200,
+    "max_epsilon":	1.0,
+    "min_epsilon":	0.1,
+    "num_test_episodes":	5,
+    "p":	"Parameter containing:\ntensor([-0.0078,  0.0280], device='cuda:0')",
+    "q_lr":	0.001,
+    "replay_size":	2000,
+    "save_freq":	10,
+    "seed":	10,
+    "start_steps":	200,
+    "steps_per_epoch":	600,
+    "target_update":	100,
+    "update_after":	200
+}

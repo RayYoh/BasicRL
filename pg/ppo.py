@@ -13,7 +13,7 @@ class PPO():
         env_fn, 
         actor_critic=MLPActorCritic, 
         ac_kwargs=dict(), seed=0, 
-        steps_per_epoch=4000, 
+        steps_per_epoch=600, 
         epochs=50, gamma=0.99, 
         clip_ratio=0.2, 
         pi_lr=3e-4,vf_lr=1e-3, 
@@ -195,15 +195,15 @@ class PPO():
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--env', type=str, default='Pendulum-v0') # HalfCheetah-v2 Pendulum-v0 CartPole-v0
+    parser.add_argument('--env', type=str, default='CartPole-v0') # HalfCheetah-v2 Pendulum-v0 CartPole-v0
     parser.add_argument('--hid', type=int, default=64)
     parser.add_argument('--l', type=int, default=2)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--seed', '-s', type=int, default=10)
     parser.add_argument('--cpu', type=int, default=4)
-    parser.add_argument('--steps', type=int, default=4000)
+    parser.add_argument('--steps', type=int, default=600)
     parser.add_argument('--epochs', type=int, default=200)
-    parser.add_argument('--exp_name', type=str, default='Pendulum-v0_ppo_gpu')
+    parser.add_argument('--exp_name', type=str, default='1008CartPole-v0_ppo')
     args = parser.parse_args()
 
     from logx import setup_logger_kwargs
